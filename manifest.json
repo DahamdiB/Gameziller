@@ -1,0 +1,23 @@
+{
+    "name": "Gaming Store",
+    "short_name": "Gameziller",
+    "description": "Your ultimate destination for gaming entertainment. We provide the latest games, consoles, and accessories for gamers of all levels.",
+    "start_url": "/home.html",
+    "display": "standalone",
+    "background_color": "#1e1e1f",
+    "theme_color": "#900cb1",
+    "icons": [
+      {
+        "src": "/",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+
+
+    ]
+  }
