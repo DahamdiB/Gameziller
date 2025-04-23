@@ -1,0 +1,46 @@
+{
+  "processors": [
+    { "id": "p1", "name": "Intel Core i9-13900K", "price": 589.99, "image": "images_2/p1.jpeg" },
+    { "id": "p2", "name": "AMD Ryzen 9 7950X", "price": 549.99, "image": "images_2/p2.jpg" },
+    { "id": "p3", "name": "Intel Core i7-13700K", "price": 409.99, "image": "images_2/p3.jpg" },
+    { "id": "p4", "name": "AMD Ryzen 7 7700X", "price": 349.99, "image": "images_2/p4.jpeg" },
+    { "id": "p5", "name": "Intel Core i5-13600K", "price": 319.99, "image": "images_2/p5.jpeg" },
+    { "id": "p6", "name": "AMD Ryzen 5 7600X", "price": 299.99, "image": "images_2/p6.jpeg" }
+  ],
+  "graphicsCards": [
+    { "id": "g1", "name": "NVIDIA RTX 4090", "price": 1599.99, "image": "images_2/g1.jpeg" },
+    { "id": "g2", "name": "AMD RX 7900 XTX", "price": 999.99, "image": "images_2/g2.jpeg" },
+    { "id": "g3", "name": "NVIDIA RTX 4080", "price": 1199.99, "image": "images_2/g3.jpeg" },
+    { "id": "g4", "name": "AMD RX 7900 XT", "price": 899.99, "image": "images_2/g4.jpeg" },
+    { "id": "g5", "name": "NVIDIA RTX 4070 Ti", "price": 799.99, "image": "images_2/g5.jpeg" },
+    { "id": "g6", "name": "AMD RX 7800 XT", "price": 499.99, "image": "images_2/g6.jpeg" }
+  ],
+
+  "motherboards": [
+    { "id": "m1", "name": "ASUS ROG Maximus Z790", "price": 599.99, "image": "images_2/m1.jpeg" },
+    { "id": "m2", "name": "MSI MEG X670E ACE", "price": 699.99, "image": "images_2/m2.jpg" },
+    { "id": "m3", "name": "GIGABYTE Z790 AORUS", "price": 449.99, "image": "images_2/m3.jpeg" },
+    { "id": "m4", "name": "ASRock X670E Taichi", "price": 499.99, "image": "images_2/m4.jpeg" },
+    { "id": "m5", "name": "ASUS TUF Gaming B650", "price": 239.99, "image": "images_2/m5.jpeg" },
+    { "id": "m6", "name": "MSI MPG B760", "price": 199.99, "image": "images_2/m6.jpeg" }
+  ],
+
+  "memory": [
+    { "id": "r1", "name": "G.SKILL Trident Z5 32GB DDR5", "price": 189.99, "image": "images_2/r1.jpeg" },
+    { "id": "r2", "name": "Corsair Dominator 32GB DDR5", "price": 199.99, "image": "images_2/r2.jpeg" },
+    { "id": "r3", "name": "Crucial 32GB DDR5", "price": 149.99, "image": "images_2/r3.jpeg" },
+    { "id": "r4", "name": "Kingston Fury 32GB DDR5", "price": 169.99, "image": "images_2/r4.jpeg" },
+    { "id": "r5", "name": "Corsair Vengeance DDR5 32GB", "price": 159.99, "image": "images_2/r5.jpeg"},
+    { "id": "r6", "name": "G.SKILL Trident Z5 RGB DDR5 32GB", "price": 139.99, "image": "images_2/r6.jpeg" }
+  
+  ],
+  
+  "storage": [
+    { "id": "s1", "name": "Samsung 990 PRO 2TB NVMe", "price": 219.99, "image": "images_2/s1.jpeg" },
+    { "id": "s2", "name": "WD Black SN850X 2TB", "price": 199.99, "image": "images_2/s2.jpeg" },
+    { "id": "s3", "name": "Crucial P5 Plus 2TB", "price": 179.99, "image": "images_2/s3.jpeg" },
+    { "id": "s4", "name": "Seagate FireCuda 2TB", "price": 259.99, "image": "images_2/s4.jpeg" },
+    { "id": "s5", "name": "Samsung 870 EVO 2TB SSD", "price": 159.99, "image": "images_2/s5.jpeg" },
+    { "id": "s6", "name": "WD Black 4TB HDD", "price": 129.99, "image": "images_2/s6.jpeg" }
+  ]
+}

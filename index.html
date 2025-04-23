@@ -1,103 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming Store</title>
-  <link rel="stylesheet" href="./all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Parts Store</title>
+    <link href="./styles/styles.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#" class="logo"><img src="/images/logo_transparent.png" alt="Logo"></a>
-      <input type="checkbox" id="check">
-      <label for="check" class="open-menu">&#9776;</label>
-      <label for="check" class="close-menu">&times;</label>
-      <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./About Us.html">About Us</a></li>
-        <li><a href="./Upcoming Games.html">Upcoming Games</a></li>
-        <li><a href="./Consoles.html">Consoles</a></li>
-        <li><a href="./Games.html">Gaming Peripherals</a></li>
-        <li><a href="./Games.html">Games</a></li>
-        <li><a href="./FAQs.html">FAQ</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+          <a href="#" class="logo"><img src="/images/logo_transparent.png" alt="Logo"></a>
+          <input type="checkbox" id="check">
+          <label for="check" class="open-menu">&#9776;</label>
+          <label for="check" class="close-menu">&times;</label>
+          <ul class="menu">
+            <li><a href="./index1.html">Home</a></li>
+            <li><a href="./About Us.html">About Us</a></li>
+            <li><a href="./Upcoming Games.html">Upcoming Games</a></li>
+            <li><a href="./Consoles.html">Consoles</a></li>
+            <li><a href="./Games.html">Gaming Peripherals</a></li>
+            <li><a href="./Games.html">Games</a></li>
+            <li><a href="./FAQs.html">FAQ</a></li>
+            <li><a href="./index.html">Order Page </a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <main>
-    <div class="hero">
-      <img src="./images/hero3.jpg" alt="Gaming Store Main Image" class="responsive-image">
-      <div class="hero-overlay"></div>
-      <div class="hero-text">
-        <h1 class="title">Welcome to the Ultimate Gaming Store!</h1>
-        <p class="subtitle">Your one-stop shop for all the latest games, consoles, and gaming accessories.</p>
-      </div>
+    <div class="container">
+        <h1>Computer Parts Store</h1>
+        
+        <div class="card">
+            <h2>Products</h2>
+            
+            <div class="form-section">
+                <h3>Processors</h3>
+                <div id="processors"></div>
+            </div>
+
+            <div class="form-section">
+                <h3>Graphics Cards</h3>
+                <div id="graphicsCards"></div>
+            </div>
+
+            <div class="form-section">
+                <h3>Motherboards</h3>
+                <div id="motherboards"></div>
+            </div>
+
+            <div class="form-section">
+                <h3>Memory (RAM)</h3>
+                <div id="memory"></div>
+            </div>
+
+            <div class="form-section">
+                <h3>Storage Devices</h3>
+                <div id="storage"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Order Summary</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderTable"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-right">Total:</td>
+                            <td id="totalPrice">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="button-group"> 
+                <!-- button added in class -->
+                <button id="saveToFavorites" class="button button-blue">
+                    Save as Favorite
+                </button>
+
+                <button id="loadFavorites" class="button button-pink">
+                    Apply Favorites
+                </button>
+
+                <button id="buyNow" class="button button-purple">
+                    Buy Now
+                </button>
+
+        <!-- <button id="showFavourites" class="button button-red">
+                    Show Favorites
+                </button> -->
+
+            </div>
+        </div>
     </div>
 
-    <section class="introduction">
-      <h2>Whether you're a casual player or a hardcore gamer, we have everything you need to enhance your gaming experience. Explore our collection and level up your gear today!</h2>
-    </section>
-
-    <section class="trending-section">
-      <h1>Now Trending 🔥🔥🔥</h1>
-      <div class="trending-game">
-        <div class="game-image">
-          <img src="./images/Trending1.jpg" alt="Farming Simulator">
-        </div>
-        <div class="game-content">
-          <h2>Trending: Farming Simulator</h2>
-          <div class="game-description">
-            <p>Experience true agricultural management with realistic farming mechanics. Build and manage your own farm in this immersive simulation game.</p>
-            <ul class="feature-list">
-              <li>🌾 Plant and harvest various crops</li>
-              <li>🐄 Manage livestock operations</li>
-              <li>🚜 Expand farm with new equipment</li>
-              <li>🏗️ Build and upgrade structures</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="trending-game">
-        <div class="game-image">
-          <img src="./images/trending 2.jpg" alt="Murky Divers">
-        </div>
-        <div class="game-content">
-          <h2>Trending: Murky Divers</h2>
-          <div class="game-description">
-            <p>Dive into the depths of horror in this team-based underwater adventure. Explore dark waters and face unknown terrors.</p>
-            <ul class="feature-list">
-              <li>🌊 Team-based diving adventure</li>
-              <li>👻 Horror elements with creatures</li>
-              <li>🤿 Advanced diving mechanics</li>
-              <li>🛠️ Customize and upgrade gear</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="trending-game">
-        <div class="game-image">
-          <img src="./images/trending 3.jpg" alt="Age of Empires">
-        </div>
-        <div class="game-content">
-          <h2>Age of Empires</h2>
-          <div class="game-description">
-            <p>Command ancient civilizations in epic historical battles. Lead your empire to glory through strategic warfare and economic development.</p>
-            <ul class="feature-list">
-              <li>⚔️ Historical Campaign Missions</li>
-              <li>👑 Iconic Historical Figures</li>
-              <li>🎮 Enhanced Naval Combat</li>
-              <li>🏰 Three New Civilizations</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
+    <!-- To show favourites list -->
+    <div id="favoriteSummary" class="card" style="display: none; margin-top: 2rem;">
+        <h2>Favorites Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <!-- where the data of the table rows go in -->
+            <tbody id="favoriteTableBody"></tbody>
+        </table>
+    </div>
+ 
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-section">
@@ -128,5 +148,10 @@
       <p>&copy; 2024 @Gameziller. All rights reserved.</p>
     </div>
   </footer>
+
+    <script src="./scripts/script.js"></script>
+    
+
+
 </body>
 </html>

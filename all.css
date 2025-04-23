@@ -1,5 +1,3 @@
-
-
 /* General Styles */
 :root {
   --primary-color: #900cb1;
@@ -10,6 +8,7 @@
   --accent-color: #ff6b6b;
 }
 
+
 body {
   font-family: Verdana, sans-serif;
   margin: 0;
@@ -18,7 +17,6 @@ body {
   color: var(--text-light);
   line-height: 1.6;
 }
-
 
 
 /* NAVIGATION BAR */
@@ -66,6 +64,7 @@ body {
   text-decoration-color: var(--primary-color);
 }
 
+
 .open-menu,
 .close-menu {
   display: none;
@@ -77,6 +76,7 @@ body {
 #check {
   display: none;
 }
+
 
 @media (max-width: 768px) {
   .navbar ul {
@@ -310,10 +310,15 @@ body {
 }
 
 /* Footer Styles */
+
 .footer {
   background-color: var(--background-dark);
   padding: 60px 0 0;
   margin-top: 40px;
+}
+
+.footer h3 {
+  color: #5a0303;
 }
 
 .footer-container {
@@ -326,8 +331,8 @@ body {
 }
 
 .footer-section h3 {
-  color: var(--primary-color);
   margin-bottom: 20px;
+  color: #5a0303;
 }
 
 .footer-section ul {
@@ -340,14 +345,12 @@ body {
 }
 
 .footer-section ul li a {
-  color: var(--text-light);
+  
   text-decoration: none;
   transition: color 0.3s ease;
+  color: #e0e0e0;
 }
 
-.footer-section ul li a:hover {
-  color: var(--primary-color);
-}
 
 .footer-section2 .numbered-list {
   list-style: decimal;
@@ -966,6 +969,8 @@ h1 {
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
 
 /* Responsive design */
 @media (max-width: 1024px) {

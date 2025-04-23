@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Computer Parts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>Order Your Computer Parts</h1>
+
+    <div id="products">
+        <h2>Processors</h2>
+        <select id="processor">
+            <option value="100">Intel i5 - $100</option>
+            <option value="200">Intel i7 - $200</option>
+            <option value="300">Intel i9 - $300</option>
+            <option value="150">AMD Ryzen 5 - $150</option>
+            <option value="250">AMD Ryzen 7 - $250</option>
+            <option value="350">AMD Ryzen 9 - $350</option>
+        </select>
+        <input type="number" id="processorQty" min="1" value="1">
+        <button onclick="addItem('Processor', 'processor', 'processorQty')">Add</button>
+
+        <h2>Graphic Cards</h2>
+        <select id="gpu">
+            <option value="400">NVIDIA RTX 4060 - $400</option>
+            <option value="500">NVIDIA RTX 4070 - $500</option>
+            <option value="600">NVIDIA RTX 4080 - $600</option>
+            <option value="300">AMD RX 7600 - $300</option>
+            <option value="450">AMD RX 7700 - $450</option>
+            <option value="550">AMD RX 7900 - $550</option>
+        </select>
+        <input type="number" id="gpuQty" min="1" value="1">
+        <button onclick="addItem('GPU', 'gpu', 'gpuQty')">Add</button>
+
+        <h2>Order Summary</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="orderTable"></tbody>
+        </table>
+        <h3>Total: $<span id="totalPrice">0</span></h3>
+
+        <button onclick="saveFavourite()">Add to Favourites</button>
+        <button onclick="loadFavourite()">Apply Favourites</button>
+        <button onclick="checkout()">Buy Now</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
