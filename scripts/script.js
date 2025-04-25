@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });  
 
 // Update order summary table
+
+//Function 1
 function updateOrderTable() {
     const tableBody = document.getElementById('orderTable');
     const totalElement = document.getElementById('totalPrice');
@@ -81,6 +83,7 @@ function updateOrderTable() {
 
 
 //Show Favorite button
+
 function showFavoriteSummary() {
     const savedOrder = localStorage.getItem('favoriteOrder');
     const summaryContainer = document.getElementById('favoriteSummary');
@@ -111,6 +114,7 @@ function showFavoriteSummary() {
 // Button event listeners
 document.addEventListener('DOMContentLoaded', () => {
     // Save to favorites
+    //Function 2
     const saveButton = document.getElementById('saveToFavorites');
     //if functions used to check for existence and prevent errors
     if (saveButton) {
@@ -216,6 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Fnction to calculate total price of the order
+
 function calculateTotal() {
     return Object.values(cart).reduce((total, item) => total + (item.price * item.quantity), 0);
 }
